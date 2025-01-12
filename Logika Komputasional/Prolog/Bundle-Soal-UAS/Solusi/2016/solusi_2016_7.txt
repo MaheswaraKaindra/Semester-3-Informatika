@@ -1,0 +1,31 @@
+Kode 1:
+number_of_parents(adam, 0) :- !.
+number_of_parents(hawa, 0) :- !.
+number_of_parents(X, 2).
+
+Cara kerja kode 1:
+Membaca kedua parameter dari kiri ke kanan. Apabila kedua parameter input memenuhi, program akan berhenti dengan mengirimkan true.
+Di sini, adam dan hawa diperiksa parameter keduanya, di mana jika memenuhi (=0), akan menghasilkan true. Tapi program tidak memeriksa untuk input parameter 2 selain 0, sehingga akan menghasilkan true.
+
+Kode 2:
+number_of_parents(adam, N) :- !, N=0.
+number_of_parents(hawa, N) :- !, N=0.
+number_of_parents(X, 2).
+
+Cara kerja kode 2:
+Membaca kedua parameter dari kiri ke kanan. Namun bedanya input parameter 1 yang bernilai 'adam' akan selalu masuk ke case 1, di mana ia diperiksa apakah N nya = 0.
+Begitu juga untuk hawa, akan langsung masuk ke case 2 untuk berapapun input parameter 2.
+Hasilnya adalah menghasilkan false ketika terdapat query number_of_parents(adam/hawa, <N selain 0>)
+
+Ketika diberi query
+| ?- number_of_parents(john, X).
+Kedua program akan mengeluarkan output
+X = 2
+yes
+
+Ketika diberi query
+| ?- number_of_parents(hawa, 2).
+Kode 1 akan menghasilkan
+yes
+Kode 2 akan menghasilkan
+no

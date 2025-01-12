@@ -1,0 +1,5 @@
+a.  BENAR, terdapat 2 cara mengurutkan fakta dan aturan.
+b.  SALAH, \== mengatakan nilai x dan y adalah tidak sama secara Logic.
+c.  SALAH, query tidak bisa bersifat rekursif.
+d.  BENAR, red cut merupakan jenis cut untuk memanipulasi hasil pada program.
+e.  SALAH, basis biasanya terdiri dari 0 elemen, dan Head berupa value, bukan list.

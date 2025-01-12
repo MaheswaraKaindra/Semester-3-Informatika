@@ -1,0 +1,15 @@
+Code:
+classify(0, zero).
+classify(N, negative):- N<0.
+classify(N, positive).
+go :-
+    write('start'), nl,
+    repeat,
+    write('enter a positive value'), read(N),
+    classify(N, Type),
+    Type = positive,
+    write('positive value is '), write(N), nl.
+
+a.  Program akan mengulang dan meminta user memasukkan kembali N
+b.  Program akan mengulang dan meminta user memasukkan kembali N
+c.  Program sudah benar

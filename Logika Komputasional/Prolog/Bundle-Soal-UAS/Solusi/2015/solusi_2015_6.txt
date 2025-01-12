@@ -1,0 +1,5 @@
+a.  Salah, prolog menggunakan paradigma deklaratif.
+b.  Salah, untuk melakukan AND, digunakan ','.
+c.  Salah, green cut merupakan cara meningkatkan efisiensi, red cut merupakan cara mendapatkan hasil yang benar.
+d.  Salah, expert system terdiri atas inference engine (controller), knowledge engine (model), user interface (view).
+e.  Benar.
